@@ -4,8 +4,8 @@
       <img class="header__logo" src="~/assets/images/logo.svg" alt="Logo">
 
       <ul class="header__navigation">
-        <li class="header__link"><nuxt-link class="header__anchor" to="/">home</nuxt-link></li>
-        <li class="header__link"><nuxt-link class="header__anchor" to="/about">about</nuxt-link></li>
+        <li class="header__link"><nuxt-link class="header__anchor link-anchor" to="/">home</nuxt-link></li>
+        <li class="header__link"><nuxt-link class="header__anchor link-anchor" to="/about">about</nuxt-link></li>
       </ul>
 
       <nuxt-link class="header__btn" to="/contact">contact us</nuxt-link>
@@ -30,15 +30,15 @@ export default {
     display: grid;
     grid-template-columns: max-content 1fr max-content;
     align-items: center;
-    column-gap: 80px;
+    column-gap: 8rem;
 
     @media only screen and (max-width: $bp-medium) {
-      column-gap: 48px;
+      column-gap: 4rem;
     }
   }
 
   &__logo {
-    width: 160px;
+    width: 16rem;
   }
 
   &__navigation {
@@ -47,20 +47,10 @@ export default {
   }
 
   &__link {
-    margin-right: 40px;
+    margin-right: 4rem;
 
     &:last-child {
       margin-right: 0;
-    }
-  }
-
-  &__anchor {
-    color: $white;
-    text-decoration: none;
-    transition: color .3s;
-
-    &:hover, &:active, &.nuxt-link-exact-active {
-      color: $light-coral;
     }
   }
 

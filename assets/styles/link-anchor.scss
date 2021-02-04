@@ -1,0 +1,9 @@
+.link-anchor {
+  color: $white;
+  text-decoration: none;
+  transition: color .3s;
+
+  &:hover, &:active, &.nuxt-link-exact-active {
+    color: $light-coral;
+  }
+}
