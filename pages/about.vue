@@ -35,11 +35,7 @@
   Aden Allan
   Head of Talent
 
-
-
-  Ready to get started?
-
-  contact us
+  <contact-banner />
   </div>
 </template>
 

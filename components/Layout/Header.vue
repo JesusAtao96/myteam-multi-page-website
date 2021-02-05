@@ -9,6 +9,10 @@
       </ul>
 
       <nuxt-link class="header__btn" to="/contact">contact us</nuxt-link>
+
+      <button class="header__menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17"><g fill="#FFF" fill-rule="evenodd"><path d="M0 0h20v3H0zM0 7h20v3H0zM0 14h20v3H0z"/></g></svg>
+      </button>
     </nav>
   </header>
 </template>
@@ -25,6 +29,14 @@ export default {
   height: 194px;
   @extend %main-grid;
 
+  @media only screen and (max-width: $bp-medium) {
+    height: 178px;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    height: 178px;
+  }
+
   &__nav {
     grid-column: center-start / center-end;
     display: grid;
@@ -35,15 +47,28 @@ export default {
     @media only screen and (max-width: $bp-medium) {
       column-gap: 4rem;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 0;
+    }
   }
 
   &__logo {
     width: 16rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 12.8rem;
+    }
   }
 
   &__navigation {
     list-style: none;
     display: flex;
+
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
   }
 
   &__link {
@@ -55,22 +80,23 @@ export default {
   }
 
   &__btn {
-    color: $white;
-    text-decoration: none;
-    width: 153px;
-    height: 48px;
-    border: 2px solid $white;
-    border-radius: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 0;
-    transition: background-color .3s, color .5s, transform 1s;
+    @include button($white, transparent, $white, $dark-green, $white);
 
-    &:hover {
-      background-color: $white;
-      color: $dark-green;
-      transform: scale(1.1);
+    @media only screen and (max-width: $bp-small) {
+      display: none;
+    }
+  }
+
+  &__menu {
+    display: none;
+
+    @media only screen and (max-width: $bp-small) {
+      display: block;
+      background-color: transparent;
+      width: 24px;
+      border: 0;
+      outline: 0;
+      justify-self: end;
     }
   }
 }

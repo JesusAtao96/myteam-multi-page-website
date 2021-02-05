@@ -21,8 +21,18 @@
 
 .heading-2 {
   font-size: $font-size-h2;
+  line-height: $font-size-h2;
+  height: $font-size-h2;
 
-  /* line-height: 1.5; */
+  @media only screen and (max-width: $bp-medium) {
+    height: 6.4rem;
+    display: flex;
+    align-items: center;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    justify-content: center;
+  }
 }
 
 .heading-3 {

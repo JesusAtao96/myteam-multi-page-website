@@ -5,8 +5,8 @@
         <img class="footer__logo" src="~/assets/images/logo.svg" alt="Logo">
 
         <ul class="footer__navigation">
-          <li class="footer__link"><nuxt-link class="footer__anchor link-anchor" to="/">home</nuxt-link></li>
-          <li class="footer__link"><nuxt-link class="footer__anchor link-anchor" to="/about">about</nuxt-link></li>
+          <li class="footer__link"><nuxt-link class="link-anchor footer__anchor" to="/">home</nuxt-link></li>
+          <li class="footer__link"><nuxt-link class="link-anchor footer__anchor" to="/about">about</nuxt-link></li>
         </ul>
       </div>
 
@@ -48,28 +48,72 @@ export default {
 
   grid-template-rows: 48px auto 48px;
 
+  @media only screen and (max-width: $bp-medium) {
+    grid-template-rows: 56px repeat(2, min-content) 56px;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-rows: 64px repeat(2, min-content) 64px;
+  }
+
   &__content {
     grid-column: center-start / center-end;
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: max-content 1fr max-content;
-    column-gap: 125px;
+    column-gap: 12.5rem;
+
+    @media only screen and (max-width: $bp-large) {
+      column-gap: 8rem;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, min-content);
+      column-gap: 0;
+      row-gap: 3.2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, min-content);
+      row-gap: 2.4rem;
+    }
   }
 
   &__pages {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / 3;
+      grid-row: 1 / 2;
+      justify-self: center;
+      align-items: center;
+    }
   }
 
   &__logo {
-    width: 160px;
+    width: 16rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      width: 9.6rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 2.4rem;
+    }
   }
 
   &__navigation {
     list-style: none;
     display: flex;
     margin-bottom: .7rem;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 0;
+    }
   }
 
   &__link {
@@ -77,6 +121,25 @@ export default {
 
     &:last-child {
       margin-right: 0;
+    }
+  }
+
+  &__anchor {
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__information {
+    @media only screen and (max-width: $bp-medium) {
+      text-align: right;
+      margin-bottom: .2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      text-align: center;
     }
   }
 
@@ -90,6 +153,30 @@ export default {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
+
+    @media only screen and (max-width: $bp-medium) {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / 3;
+      grid-row: 3 / 4;
+      flex-direction: column;
+      margin-top: 1.6rem;
+    }
+  }
+
+  &__socials {
+    @media only screen and (max-width: $bp-medium) {
+      line-height: 0;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__social {

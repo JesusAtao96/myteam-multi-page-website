@@ -44,11 +44,7 @@
   Arthur Clarke
   Co-founder of MyPhysio
 
-
-
-  Ready to get started?
-
-  contact us
+  <contact-banner />
 </div>
 </template>
 

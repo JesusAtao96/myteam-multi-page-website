@@ -3,14 +3,14 @@
   grid-template-columns: [full-start] 1fr [center-start] 1110px [center-end] 1fr [full-end];
 
   @media only screen and (max-width: $bp-large) {
-      grid-template-columns: [full-start] 70px [center-start] 1fr [center-end] 70px [full-end];
+      grid-template-columns: [full-start] 54px [center-start] 1fr [center-end] 54px [full-end];
   }
 
   @media only screen and (max-width: $bp-medium) {
-      grid-template-columns: [full-start] 50px [center-start] 1fr [center-end] 50px [full-end];
+      grid-template-columns: [full-start] 39px [center-start] 1fr [center-end] 39px [full-end];
   }
 
   @media only screen and (max-width: $bp-small) {
-      grid-template-columns: [full-start] 20px [center-start] 1fr [center-end] 20px [full-end];
+      grid-template-columns: [full-start] 24px [center-start] 1fr [center-end] 24px [full-end];
   }
 }
