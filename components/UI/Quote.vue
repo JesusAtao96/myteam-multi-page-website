@@ -3,7 +3,7 @@
     <p class="quote__description paragraph-2">{{ description }}</p>
     <h4 class="quote__person heading-3">{{ person }}</h4>
     <p class="quote__position">{{ position }}</p>
-    <img :src="require(`@/assets/images/${image}.jpg`)" v-bind:alt="person" class="quote__avatar">
+    <img :src="image" v-bind:alt="person" class="quote__avatar">
   </div>
 </template>
 
@@ -34,7 +34,7 @@ export default {
 .quote {
   padding-top: 36px;
   padding-bottom: 11px;
-  background-image: url(~assets/images/icon-quotes.svg);
+  background-image: url(/images/icon-quotes.svg);
   background-repeat: no-repeat;
   background-position: left 50% top;
 

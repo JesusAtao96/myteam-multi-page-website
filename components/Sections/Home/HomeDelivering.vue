@@ -31,7 +31,7 @@ export default {
           `,
           person: 'Kady Baker',
           position: 'Product Manager at Bookmark',
-          image: 'avatar-kady'
+          image: '/images/avatar-kady.jpg'
         },
         {
           id: 2,
@@ -42,7 +42,7 @@ export default {
           `,
           person: 'Aiysha Reese',
           position: 'Founder of Manage',
-          image: 'avatar-aiysha'
+          image: '/images/avatar-aiysha.jpg'
         },
         {
           id: 3,
@@ -53,7 +53,7 @@ export default {
           `,
           person: 'Arthur Clarke',
           position: 'Co-founder of MyPhysio',
-          image: 'avatar-arthur'
+          image: '/images/avatar-arthur.jpg'
         }
       ]
     };
@@ -66,7 +66,7 @@ export default {
   background-color: $deep-jungle-green;
   @extend %main-grid;
 
-  background-image: url(~assets/images/bg-pattern-home-4-about-3.svg), url(~assets/images/bg-pattern-home-5.svg);
+  background-image: url(/images/bg-pattern-home-4-about-3.svg), url(/images/bg-pattern-home-5.svg);
   background-repeat: no-repeat;
   background-position: left top, right bottom;
 

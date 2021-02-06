@@ -50,7 +50,15 @@ export default {
     }
   },
 
+  // Environment Configuration: https://nuxtjs.org/docs/2.x/directory-structure/nuxt-config#env
+  env: {},
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-  }
+  build: {},
+  /* router: {
+    base: process.env.NODE_ENV === "development" ? process.env.BASE_URL : '/frontend-mentor-challenges/myteam-multi-page-website/'
+  }, */
+  /* static: {
+    prefix: true
+  } */
 }

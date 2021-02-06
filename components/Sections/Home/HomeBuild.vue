@@ -4,7 +4,7 @@
       <h2 class="build__title heading-2">Build & manage distributed teams like no one else.</h2>
 
       <div class="build__items">
-        <find-item
+        <build-item
           v-for="item of items"
           v-bind:key="item.id"
           :image="item.image"
@@ -23,19 +23,19 @@ export default {
       items: [
         {
           id: 1,
-          image: 'icon-person',
+          image: '/images/icon-person.svg',
           title: 'Experienced Individuals',
           description: 'Our network is made up of highly experienced professionals who are passionate about what they do.'
         },
         {
           id: 2,
-          image: 'icon-cog',
+          image: '/images/icon-cog.svg',
           title: 'Easy to Implement',
           description: 'Our processes have been refined over years of implementation meaning our teams always deliver.'
         },
         {
           id: 3,
-          image: 'icon-chart',
+          image: '/images/icon-chart.svg',
           title: 'Enhanced Productivity',
           description: 'Our customized platform with in-built analytics helps you manage your distributed teams.'
         }
@@ -50,7 +50,7 @@ export default {
   background-color: $sacramento-state-green;
   @extend %main-grid;
 
-  background-image: url(~assets/images/bg-pattern-home-3.svg);
+  background-image: url(/images/bg-pattern-home-3.svg);
   background-repeat: no-repeat;
   background-position: right -100px bottom;
 

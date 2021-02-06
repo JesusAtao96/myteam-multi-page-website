@@ -23,7 +23,7 @@ export default {}
   background-color: $midnight-green;
   @extend %main-grid;
 
-  background-image: url(~assets/images/bg-pattern-home-1.svg);
+  background-image: url(/images/bg-pattern-home-1.svg);
   background-repeat: no-repeat;
   background-position: left -100px top 56px;
 
@@ -32,7 +32,7 @@ export default {}
   }
 
   &__content {
-    background-image: url(~assets/images/bg-pattern-home-2.svg);
+    background-image: url(/images/bg-pattern-home-2.svg);
     background-repeat: no-repeat;
     background-position: right bottom;
     grid-column: center-start / center-end;

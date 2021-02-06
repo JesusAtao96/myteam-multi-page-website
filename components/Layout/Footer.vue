@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer__content">
       <div class="footer__pages">
-        <img class="footer__logo" src="~/assets/images/logo.svg" alt="Logo">
+        <img class="footer__logo" src="/images/logo.svg" alt="Logo">
 
         <ul class="footer__navigation">
           <li class="footer__link"><nuxt-link class="link-anchor footer__anchor" to="/">home</nuxt-link></li>

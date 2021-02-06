@@ -37,7 +37,7 @@ Your task is to build out the project to the Sketch design file provided. You ca
 
 You will also find mobile, tablet, desktop, and active state designs in JPG format if you wish to use them. 
 
-All the required assets for this project are in the `/images` folder. The assets are already optimized and ready to be used.
+All the required assets for this project are in the `//images` folder. The assets are already optimized and ready to be used.
 
 The design system in the Sketch file will give you more information about the various colors, fonts, and styles used in this project.
 

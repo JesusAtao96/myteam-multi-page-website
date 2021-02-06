@@ -21,7 +21,7 @@ export default {
 
   align-items: center;
   align-content: center;
-  background-image: url(~assets/images/bg-pattern-home-6-about-5.svg);
+  background-image: url(/images/bg-pattern-home-6-about-5.svg);
   background-repeat: no-repeat;
   background-position: left bottom -22px;
 

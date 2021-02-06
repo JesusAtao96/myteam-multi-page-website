@@ -1,6 +1,6 @@
 <template>
   <div class="item">
-    <img :src="require(`@/assets/images/${image}.svg`)" v-bind:alt="title" class="item__image">
+    <img :src="image" v-bind:alt="title" class="item__image">
     <div class="item__text">
       <h4 class="item__title">{{ title }}</h4>
       <p class="item__description paragraph-2">{{ description }}</p>

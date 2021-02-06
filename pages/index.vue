@@ -8,9 +8,7 @@
 </template>
 
 <script>
-import HomeDelivering from '../components/Sections/Home/HomeDelivering.vue'
 export default {
-  components: { HomeDelivering },
   head: {
     title: 'Frontend Mentor | myteam website challenge - Homepage'
   }
