@@ -1,6 +1,6 @@
 # Demo
 
-[live-site](https://jesusatao96.github.io/frontend-mentor-challenges/myteam-multi-page-website)
+[live-site](https://myteam-multi-page-website-teal.vercel.app/)
 
 # Frontend Mentor - myteam website
 
