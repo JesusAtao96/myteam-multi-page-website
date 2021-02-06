@@ -36,17 +36,18 @@
 
 .heading-3 {
   font-size: $font-size-h3;
-
-  /* line-height: 1.5; */
+  line-height: 2.8rem;
 }
 
 .paragraph-1 {
   font-size: $font-size-body-1;
   line-height: 2.8rem;
   height: auto;
+  font-weight: 600;
 }
 
 .paragraph-2 {
   font-size: $font-size-body-2;
   line-height: 2.5rem;
+  font-weight: 600;
 }

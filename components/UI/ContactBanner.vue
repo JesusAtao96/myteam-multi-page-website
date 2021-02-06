@@ -2,8 +2,7 @@
   <div class="banner">
     <div class="banner__content">
       <h1 class="banner__title heading-2">Ready to get started?</h1>
-
-      <div class="banner__btn">contact us</div>
+      <nuxt-link class="banner__btn" to="/contact">contact us</nuxt-link>
     </div>
   </div>
 </template>

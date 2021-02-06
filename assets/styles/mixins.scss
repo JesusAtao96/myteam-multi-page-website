@@ -21,3 +21,10 @@
     transform: scale(1.1);
   }
 }
+
+@mixin avatar($size) {
+  border: 2px solid #C4FFFE;
+  border-radius: 100%;
+  width: $size;
+  height: $size;
+}

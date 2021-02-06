@@ -6,10 +6,10 @@
       <div class="build__items">
         <find-item
           v-for="item of items"
+          v-bind:key="item.id"
           :image="item.image"
           :title="item.title"
           :description="item.description"
-          v-bind:key="item.id"
         />
       </div>
     </div>
@@ -121,52 +121,6 @@ export default {
       padding-top: 56px;
       row-gap: 4.8rem;
     }
-  }
-}
-
-.item {
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  column-gap: 2.3rem;
-
-  @media only screen and (max-width: $bp-small) {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, min-content);
-    row-gap: 1.6rem;
-    text-align: center;
-  }
-
-  &__image {
-    width: 72px;
-    height: 72px;
-    object-fit: contain;
-
-    @media only screen and (max-width: $bp-small) {
-      margin: auto;
-    }
-  }
-
-  &__text {
-    display: grid;
-    grid-template-rows: repeat(2, min-content);
-    row-gap: 1.6rem;
-
-    @media only screen and (max-width: $bp-small) {
-      row-gap: .8rem;
-    }
-  }
-
-  &__title {
-    font-weight: bold;
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-    color: $light-coral;
-  }
-
-  &__description {
-    height: auto;
-    mix-blend-mode: normal;
-    opacity: 0.8;
   }
 }
 </style>
