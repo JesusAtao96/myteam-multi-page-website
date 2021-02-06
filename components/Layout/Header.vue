@@ -1,7 +1,7 @@
 <template>
   <header class="header">
     <nav class="header__nav">
-      <nuxt-img class="header__logo" src="/images/logo.svg" loading="eager"/>
+      <nuxt-img class="header__logo" src="/images/logo.svg" loading="eager" width="160" />
 
       <ul class="header__navigation">
         <li class="header__link"><nuxt-link class="header__anchor link-anchor" to="/">home</nuxt-link></li>
@@ -55,10 +55,10 @@ export default {
   }
 
   &__logo {
-    width: 16rem;
+    width: 160px;
 
     @media only screen and (max-width: $bp-medium) {
-      width: 12.8rem;
+      width: 128px;
     }
   }
 

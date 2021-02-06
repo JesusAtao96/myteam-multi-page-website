@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer__content">
       <div class="footer__pages">
-        <nuxt-img class="footer__logo" src="/images/logo.svg" loading="lazy"/>
+        <nuxt-img class="footer__logo" src="/images/logo.svg" loading="lazy" width="160"/>
 
         <ul class="footer__navigation">
           <li class="footer__link"><nuxt-link class="link-anchor footer__anchor" to="/">home</nuxt-link></li>
@@ -95,21 +95,21 @@ export default {
   }
 
   &__logo {
-    width: 16rem;
+    width: 160px;
 
     @media only screen and (max-width: $bp-medium) {
-      width: 9.6rem;
+      width: 96px;
     }
 
     @media only screen and (max-width: $bp-small) {
-      margin-bottom: 2.4rem;
+      margin-bottom: 24px;
     }
   }
 
   &__navigation {
     list-style: none;
     display: flex;
-    margin-bottom: .7rem;
+    margin-bottom: 7px;
 
     @media only screen and (max-width: $bp-medium) {
       margin-bottom: 0;
@@ -117,7 +117,7 @@ export default {
   }
 
   &__link {
-    margin-right: 4rem;
+    margin-right: 4px;
 
     &:last-child {
       margin-right: 0;
@@ -133,7 +133,7 @@ export default {
   &__information {
     @media only screen and (max-width: $bp-medium) {
       text-align: right;
-      margin-bottom: .2rem;
+      margin-bottom: 2px;
     }
 
     @media only screen and (max-width: $bp-small) {
@@ -165,7 +165,7 @@ export default {
       grid-column: 1 / 3;
       grid-row: 3 / 4;
       flex-direction: column;
-      margin-top: 1.6rem;
+      margin-top: 16px;
     }
   }
 
@@ -175,12 +175,12 @@ export default {
     }
 
     @media only screen and (max-width: $bp-small) {
-      margin-bottom: 1.6rem;
+      margin-bottom: 16px;
     }
   }
 
   &__social {
-    margin-right: 1.6rem;
+    margin-right: 16px;
 
     &:last-child {
       margin-right: 0;
