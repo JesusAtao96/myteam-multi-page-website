@@ -71,7 +71,9 @@ export default {
     }
 
     @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 1fr;
       grid-template-rows: 64px auto auto 64px;
+      column-gap: 0;
     }
   }
 
