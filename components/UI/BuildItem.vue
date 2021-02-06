@@ -1,6 +1,6 @@
 <template>
   <div class="item">
-    <img :src="image" v-bind:alt="title" class="item__image">
+    <nuxt-img class="item__image" :src="image" loading="lazy"/>
     <div class="item__text">
       <h3 class="item__title">{{ title }}</h3>
       <p class="item__description paragraph-2">{{ description }}</p>

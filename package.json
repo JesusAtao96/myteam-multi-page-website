@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "@aceforth/nuxt-optimized-images": "^1.4.0",
+    "@nuxt/image": "^0.3.0",
     "@nuxtjs/pwa": "^3.3.5",
     "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/style-resources": "^1.0.0",

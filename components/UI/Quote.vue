@@ -3,7 +3,7 @@
     <p class="quote__description paragraph-2">{{ description }}</p>
     <h3 class="quote__person heading-3">{{ person }}</h3>
     <p class="quote__position">{{ position }}</p>
-    <img :src="image" v-bind:alt="person" class="quote__avatar">
+    <nuxt-img class="quote__avatar" :src="image" loading="lazy"/>
   </div>
 </template>
 
