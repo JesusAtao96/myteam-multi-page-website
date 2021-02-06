@@ -12,11 +12,19 @@ $bp-small: 37.5em; // 600px / 16px = 37.5
   --font-size-body-2: 1.5rem;
 
   @media only screen and (max-width: $bp-large) {
+    --font-size-h1-large: 8.2rem;
     --font-size-h2: 4rem;
+    --font-size-body-1: 1.7rem;
   }
 
   @media only screen and (max-width: $bp-medium) {
+    --font-size-h1-large: 6.4rem;
     --font-size-h2: 3.2rem;
+    --font-size-body-1: 1.5rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    --font-size-h1-large: 4rem;
   }
 }
 

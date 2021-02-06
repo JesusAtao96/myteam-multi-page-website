@@ -34,7 +34,7 @@ export default {
   }
 
   @media only screen and (max-width: $bp-small) {
-    height: 178px;
+    height: 128px;
   }
 
   &__nav {
@@ -77,6 +77,10 @@ export default {
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  &__anchor {
+    font-size: 1.8rem;
   }
 
   &__btn {

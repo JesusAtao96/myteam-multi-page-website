@@ -1,4 +1,5 @@
 @mixin button($color, $background, $border-color, $color-hover, $background-hover) {
+  font-size: 1.8rem;
   color: $color;
   background-color: $background;
   text-decoration: none;

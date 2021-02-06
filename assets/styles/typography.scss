@@ -1,16 +1,15 @@
 .heading-1-large {
   font-size: $font-size-h1-large;
-
-  /* line-height: 1.5; */
-
-  /* @media only screen and (max-width: $bp-large) {
-  }
+  line-height: $font-size-h1-large;
+  height: auto;
 
   @media only screen and (max-width: $bp-medium) {
+    line-height: 5.6rem;
   }
 
   @media only screen and (max-width: $bp-small) {
-  } */
+    line-height: 4rem;
+  }
 }
 
 .heading-1-small {
@@ -22,10 +21,10 @@
 .heading-2 {
   font-size: $font-size-h2;
   line-height: $font-size-h2;
-  height: $font-size-h2;
+  height: auto;
 
   @media only screen and (max-width: $bp-medium) {
-    height: 6.4rem;
+    height: auto;
     display: flex;
     align-items: center;
   }
@@ -43,8 +42,8 @@
 
 .paragraph-1 {
   font-size: $font-size-body-1;
-
-  /* line-height: 1.5; */
+  line-height: 2.8rem;
+  height: auto;
 }
 
 .paragraph-2 {

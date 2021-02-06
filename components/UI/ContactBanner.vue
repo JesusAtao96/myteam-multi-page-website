@@ -22,20 +22,9 @@ export default {
 
   align-items: center;
   align-content: center;
-  background-image: url(/_nuxt/assets/images/bg-pattern-home-6-about-5.svg);
+  background-image: url(~assets/images/bg-pattern-home-6-about-5.svg);
   background-repeat: no-repeat;
   background-position: left bottom -22px;
-
-  /* &::before {
-    content: '';
-    background-image: url(~assets/images/bg-pattern-home-6-about-5.svg);
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 200px;
-    height: 144px;
-  } */
 
   @media only screen and (max-width: $bp-small) {
     height: 302px;
