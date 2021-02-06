@@ -2,7 +2,7 @@
   <div class="item">
     <img :src="image" v-bind:alt="title" class="item__image">
     <div class="item__text">
-      <h4 class="item__title">{{ title }}</h4>
+      <h3 class="item__title">{{ title }}</h3>
       <p class="item__description paragraph-2">{{ description }}</p>
     </div>
   </div>

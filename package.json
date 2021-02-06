@@ -15,13 +15,18 @@
     "nuxt": "^2.14.12"
   },
   "devDependencies": {
+    "@aceforth/nuxt-optimized-images": "^1.4.0",
     "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/robots": "^2.4.2",
     "@nuxtjs/style-resources": "^1.0.0",
     "@nuxtjs/stylelint-module": "^4.0.0",
     "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-prettier": "^3.3.1",
     "fibers": "^5.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
+    "imagemin-svgo": "^8.0.0",
     "prettier": "^2.2.1",
     "sass": "^1.32.6",
     "sass-loader": "^10.1.1",

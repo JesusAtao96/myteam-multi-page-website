@@ -1,7 +1,7 @@
 <template>
   <div class="quote">
     <p class="quote__description paragraph-2">{{ description }}</p>
-    <h4 class="quote__person heading-3">{{ person }}</h4>
+    <h3 class="quote__person heading-3">{{ person }}</h3>
     <p class="quote__position">{{ position }}</p>
     <img :src="image" v-bind:alt="person" class="quote__avatar">
   </div>
