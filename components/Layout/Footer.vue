@@ -117,7 +117,11 @@ export default {
   }
 
   &__link {
-    margin-right: 4px;
+    margin-right: 40px;
+
+    @media only screen and (max-width: $bp-medium) {
+      margin-right: 24px;
+    }
 
     &:last-child {
       margin-right: 0;

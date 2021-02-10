@@ -14,8 +14,16 @@
 
 .heading-1-small {
   font-size: $font-size-h1-small;
+  line-height: 10rem;
 
-  /* line-height: 1.5; */
+  @media only screen and (max-width: $bp-medium) {
+    line-height: 5.6rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
 }
 
 .heading-2 {
