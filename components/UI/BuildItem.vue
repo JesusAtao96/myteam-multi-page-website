@@ -1,6 +1,6 @@
 <template>
   <div class="item">
-    <nuxt-img class="item__image" :src="image" loading="lazy" width="72" />
+    <nuxt-img class="item__image" :src="image" lazy="false" width="72" />
     <div class="item__text">
       <h3 class="item__title">{{ title }}</h3>
       <p class="item__description paragraph-2">{{ description }}</p>

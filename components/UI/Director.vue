@@ -10,7 +10,7 @@
       <nuxt-img
         class="director__avatar"
         :src="image"
-        loading="lazy"
+        lazy="false"
         width="62"
       />
       <h3 class="director__name director__name--front heading-3">

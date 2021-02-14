@@ -5,15 +5,15 @@
 
     <div class="contact__items">
       <div class="contact__item">
-        <nuxt-img class="contact__image" src="/images/icon-person.svg" loading="lazy" />
+        <nuxt-img class="contact__image" src="/images/icon-person.svg" lazy="false" />
         <p class="contact__description paragraph-1">The quality of our talent network</p>
       </div>
       <div class="contact__item">
-        <nuxt-img class="contact__image" src="/images/icon-cog.svg" loading="lazy" />
+        <nuxt-img class="contact__image" src="/images/icon-cog.svg" lazy="false" />
         <p class="contact__description paragraph-1">Usage & implementation of our software</p>
       </div>
       <div class="contact__item">
-        <nuxt-img class="contact__image" src="/images/icon-chart.svg" loading="lazy" />
+        <nuxt-img class="contact__image" src="/images/icon-chart.svg" lazy="false" />
         <p class="contact__description paragraph-1">How we help drive innovation</p>
       </div>
     </div>

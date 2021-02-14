@@ -3,7 +3,7 @@
     <p class="quote__description paragraph-2">{{ description }}</p>
     <h3 class="quote__person heading-3">{{ person }}</h3>
     <p class="quote__position">{{ position }}</p>
-    <nuxt-img class="quote__avatar" :src="image" loading="lazy" width="62" />
+    <nuxt-img class="quote__avatar" :src="image" lazy="false" width="62" />
   </div>
 </template>
 
