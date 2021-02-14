@@ -1,7 +1,9 @@
 <template>
   <header class="header">
     <nav class="header__nav">
-      <nuxt-img class="header__logo" src="/images/logo.svg" loading="eager" width="160" />
+      <nuxt-link class="header__brand" to="/">
+        <nuxt-img class="header__logo" src="/images/logo.svg" loading="eager" width="160" />
+      </nuxt-link>
 
       <ul class="header__navigation">
         <li class="header__link"><nuxt-link class="header__anchor link-anchor" to="/">home</nuxt-link></li>
@@ -57,6 +59,10 @@ export default {
       grid-template-columns: repeat(2, 1fr);
       column-gap: 0;
     }
+  }
+
+  &__brand {
+    display: inherit;
   }
 
   &__logo {

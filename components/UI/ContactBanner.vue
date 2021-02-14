@@ -23,7 +23,7 @@ export default {
   align-content: center;
   background-image: url(/images/bg-pattern-home-6-about-5.svg);
   background-repeat: no-repeat;
-  background-position: left bottom -22px;
+  background-position: left bottom;
 
   @media only screen and (max-width: $bp-small) {
     height: 302px;

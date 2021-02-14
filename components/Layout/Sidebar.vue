@@ -41,15 +41,18 @@ export default {
     position: absolute;
     top: 0;
     z-index: 100;
-    background-color: rgba($black, .5);
-    animation: colorAnimation 1s ease;
+    transition: all 1s ease;
 
     &__overlay {
-      grid-column: 1 / 2;
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      background-color: rgba($black, .5);
+      transition: background-color .4s ease;
     }
 
     &__content {
       grid-column: 2 / 3;
+      grid-row: 1 / 2;
       background-color: $police-blue;
       width: 255px;
       display: grid;
@@ -58,7 +61,7 @@ export default {
       background-image: url(/images/bg-pattern-about-1-mobile-nav-1.svg);
       background-repeat: no-repeat;
       background-position: right -100px bottom;
-      animation: slide .5s ease;
+      transition: width .4s ease;
     }
 
     &__header {
@@ -100,23 +103,27 @@ export default {
     }
   }
 
-  @keyframes slide {
-    from {
-      transform: translateX(255px);
-    }
+  .fade-enter-active, .fade-leave-active {
+    .sidebar {
+      &__overlay {
+        background-color: rgba($black, .5);
+      }
 
-    to {
-      transform: translateX(0);
+      &__content {
+        width: 255px;
+      }
     }
   }
 
-  @keyframes colorAnimation {
-    from {
-      background-color: transparent;
-    }
+  .fade-enter, .fade-leave-to {
+    .sidebar {
+      &__overlay {
+        background-color: transparent;
+      }
 
-    to {
-      background-color: rgba($black, .5);
+      &__content {
+        width: 0;
+      }
     }
   }
 </style>

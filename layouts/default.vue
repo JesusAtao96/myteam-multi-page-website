@@ -1,7 +1,9 @@
 <template>
-  <div :class="{ 'open': isSidebarOpen }">
+  <div :class="{ open: isSidebarOpen }">
     <Header @onToggle="onToggle" />
-    <Sidebar v-if="isSidebarOpen" @onToggle="onToggle" />
+    <transition name="fade">
+      <Sidebar v-if="isSidebarOpen" @onToggle="onToggle" />
+    </transition>
     <Nuxt />
     <Footer />
   </div>
@@ -21,9 +23,9 @@ export default {
   },
 }
 </script>
-<style>
-  .open {
-    height: 100vh;
-    overflow: hidden;
-  }
+<style lang="scss" scoped>
+.open {
+  height: 100vh;
+  overflow: hidden;
+}
 </style>

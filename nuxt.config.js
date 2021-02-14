@@ -69,6 +69,7 @@ export default {
     '@nuxtjs/style-resources',
     '@aceforth/nuxt-optimized-images',
     '@nuxt/image',
+    'nuxt-purgecss',
   ],
 
   optimizedImages: {

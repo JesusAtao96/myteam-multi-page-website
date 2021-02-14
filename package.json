@@ -28,6 +28,7 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.1",
     "imagemin-svgo": "^8.0.0",
+    "nuxt-purgecss": "^1.0.0",
     "prettier": "^2.2.1",
     "sass": "^1.32.6",
     "sass-loader": "^10.1.1",
