@@ -30,16 +30,7 @@
   font-size: $font-size-h2;
   line-height: $font-size-h2;
   height: auto;
-
-  @media only screen and (max-width: $bp-medium) {
-    height: auto;
-    display: flex;
-    align-items: center;
-  }
-
-  @media only screen and (max-width: $bp-small) {
-    justify-content: center;
-  }
+  font-weight: bold;
 }
 
 .heading-3 {
