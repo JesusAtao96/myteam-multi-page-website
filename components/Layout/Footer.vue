@@ -2,7 +2,7 @@
   <footer class="footer">
     <div class="footer__content">
       <div class="footer__pages">
-        <nuxt-img class="footer__logo" src="/images/logo.svg" lazy="false" width="160"/>
+        <nuxt-img class="footer__logo" src="/images/logo.svg" loading="lazy" width="160"/>
 
         <ul class="footer__navigation">
           <li class="footer__link"><nuxt-link class="link-anchor footer__anchor" to="/">home</nuxt-link></li>

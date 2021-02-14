@@ -1,6 +1,6 @@
 <template>
   <div class="company">
-    <nuxt-img class="company__logo" :src="image" lazy="false" />
+    <nuxt-img class="company__logo" :src="image" loading="lazy" />
   </div>
 </template>
 
